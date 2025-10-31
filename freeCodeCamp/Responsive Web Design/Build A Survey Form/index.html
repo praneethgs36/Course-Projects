@@ -1,14 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">    
-
     <head>
         <title>freeCodeCamp Survey Form</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="styles.css">
     </head>
-
     <body>
-        <h1>freeCodeCamp Survey Form</h1>
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+        <form id="survey-form">
+            <fieldset>
+                <label for="name">Name
+                    <input id="name" type="text" placeholder="Enter your name" required>
+                </label>
+                <label for="email">Email
+                    <input id="email" type="text" placeholder="Enter your email" required>
+                </label>
+                <label for="age">Age (optional)
+                    <input id="age" type="number" placeholder="Age">
+                </label>
+                <label for="role">Which option best describes your current role?
+                    <select id="role">
+                        <option>select your role</option>
+                        <option>student</option>
+                        <option>full time job</option>
+                        <option>full time learner</option>
+                        <option>other</option>
+                        <option>prefer not to say</option>
+                    </select>
+                </label>
+            </fieldset>
+        </form>
     </body>
-
 </html>
