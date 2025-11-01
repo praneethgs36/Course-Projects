@@ -1,0 +1,15 @@
+{
+	"editor.hover.enabled": false,
+	// Keep suggestions but reduce blocking details/signature popups
+	"editor.parameterHints.enabled": false,
+
+	// Keep inline quick suggestions enabled (keeps completion popup)
+	"editor.quickSuggestions": {
+		"other": true,
+		"comments": false,
+		"strings": false
+	},
+
+	// Small delay for quick suggestions (ms)
+	"editor.quickSuggestionsDelay": 50
+}

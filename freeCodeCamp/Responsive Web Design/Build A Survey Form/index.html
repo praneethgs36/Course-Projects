@@ -8,19 +8,21 @@
     <body>
         <h1 id="title">freeCodeCamp Survey Form</h1>
         <p id="description">Thank you for taking the time to help us improve the platform</p>
-        <form id="survey-form">
+        <form id="survey-form" method="post" action="https://survey-form.freecodecamp.rocks">
             <fieldset>
                 <label for="name">Name
                     <input id="name" type="text" placeholder="Enter your name" required>
                 </label>
                 <label for="email">Email
-                    <input id="email" type="text" placeholder="Enter your email" required>
+                    <input id="email" type="email" placeholder="Enter your email" required>
                 </label>
                 <label for="age">Age (optional)
-                    <input id="age" type="number" placeholder="Age">
+                    <input id="age" type="number" placeholder="Age" min="10" max="120">
                 </label>
-                <label for="role">Which option best describes your current role?
-                    <select id="role">
+            </fieldset>
+            <fieldset>
+                <label for="dropdown">Which option best describes your current role?
+                    <select id="dropdown">
                         <option>select your role</option>
                         <option>student</option>
                         <option>full time job</option>
@@ -30,6 +32,62 @@
                     </select>
                 </label>
             </fieldset>
+            <fieldset>
+                <legend>Would you recommend freeCodeCamp to a friend?</legend>
+                <label for="definitely">
+                    <input id="definitely" name="recommendation" type="radio"> Definitely
+                </label>
+                <label for="maybe">
+                    <input id="maybe" name="recommendation" type="radio"> Maybe
+                </label>
+                <label for="not-sure">
+                    <input id="not-sure" name="recommendation" type="radio" checked> Not sure
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>What would you like to see improved? (Check all that apply)</legend>
+                <label for="front-end">
+                    <input id="front-end" type="checkbox"> Front-end Projects
+                </label>
+                <label for="back-end">
+                    <input id="back-end" type="checkbox">  Back-end Projects
+                </label>
+                <label for="data-vis">
+                    <input id="data-vis" type="checkbox">Data Visualizaiton
+                </label>
+                <label for="challenges">
+                    <input id="challenges" type="checkbox"> Challenges
+                </label>
+                <label for="community">
+                    <input id="community" type="checkbox"> Open-source Community
+                </label>
+                <label for="help-rooms">
+                    <input id="help-rooms" type="checkbox"> Gitter Help Rooms
+                </label>
+                <label for="videos">
+                    <input id="videos" type="checkbox"> Videos
+                </label>
+                <label for="meetups">
+                    <input id="meetups" type="checkbox"> City Meetups
+                </label>
+                <label for="wiki">
+                    <input id="wiki" type="checkbox"> Wiki
+                </label>
+                <label for="forum">
+                    <input id="forum" type="checkbox"> Forum
+                </label>
+                <label for="courses">
+                    <input id="courses" type="checkbox"> Additional Courses
+                </label>
+            </fieldset>
+            <fieldset>
+                <label for="comments">Any comments or suggestions?
+                    <textarea id="comments" row="5" cols="50" placeholder="Enter your comments here">
+                        Enter your comments here
+                    </textarea>
+                </label>
+            </fieldset>
+            <input type="submit" value="Submit" />
         </form>
     </body>
 </html>
