@@ -1,5 +1,6 @@
 #main {
    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+   max-width: 1200px; /* Constrain width on large screens */
 }
 
 body {
@@ -62,11 +63,11 @@ ul li, p {
 }
 
 @media (max-width: 600px) {
-   p, ul {
-      margin-left: 2rem;
-      margin-right: 2rem;
+   #tribute-info p, #tribute-info ul {
+      margin-left: 1rem;
+      margin-right: 1rem;
    }
-   #img-caption {
-      margin-right: 2rem;
+   #image {
+      max-width: 95%; /* Allow image to be wider on mobile */
    }
 }
