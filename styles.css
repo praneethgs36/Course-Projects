@@ -1,0 +1,62 @@
+#main {
+   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+   background: linear-gradient(135deg, #B3E5FC, #E0E0E0);
+}
+
+#title {
+   text-align: center;
+   font-size: 2.5rem;
+   padding-top: 50px;
+}
+
+#subtitle {
+   text-align: center;
+}
+
+#img-div {
+   text-align: center;
+   padding: 10px;
+}
+
+#image {
+   max-width: 75%;
+   height: auto;
+   display: block;
+   margin: auto; /* Centers the block-level image horizontally */
+}
+
+#img-caption {
+   text-align: right;
+   margin: auto 125px auto auto;
+}
+
+h3 {
+   text-align: center;
+   margin: 2.5rem auto auto auto;
+}
+
+ul {
+   margin: 2rem 8rem 2rem 6rem;
+}
+
+p {
+   margin: 2rem 8rem;
+}
+
+ul li, p {
+   margin-bottom: 0.8rem; /* Adds space between list items */
+   line-height: 1.6; /* Increases space between lines within each list item */
+   font-size: 1.1rem;
+}
+
+.quote {
+   font-style: italic;
+   font-size: 1rem;
+}
+
+#tribute-info h3:last-of-type {
+   padding-bottom: 3rem;
+}
