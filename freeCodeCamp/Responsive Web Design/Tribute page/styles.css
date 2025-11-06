@@ -60,3 +60,13 @@ ul li, p {
 #tribute-info h3:last-of-type {
    padding-bottom: 3rem;
 }
+
+@media (max-width: 600px) {
+   p, ul {
+      margin-left: 2rem;
+      margin-right: 2rem;
+   }
+   #img-caption {
+      margin-right: 2rem;
+   }
+}
